@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="jdemegliosch@gmail.com">
 		<title>Welcome to Trackgenix!</title>
 	</head>
 	<body>
 
 		<!-- Header-->
 		<header>
-			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Trackgenix SA</span>
+			<h2>Trackgenix SA</h2>
 		</header>
 
 		<!-- Body-->
@@ -27,7 +31,6 @@
 				</div>	
 			</section>
 			<section>
-				<table>
 				<h2>What can you do?</h2>
 				<div>
 					<img src="images/Record-hours.png" alt="Record-hours is missing" width="200">
@@ -58,7 +61,6 @@
 						Establish which employee may have the title of "Project Manager".
 					</p>
 				</div>
-				</table>
 			</section>
 			<section>
 				<h2>Why use Trackgenix?</h2>
@@ -79,13 +81,13 @@
 						<input type="text" name="bussines-name">
 						<label>Email</label>
 						<input type="email" name="email">
-						<!-- Checkbox-->
-						<input type="checkbox" id="contact-area-1" name="contact-area-1" value="human-resources">
-  						<label for="contact-area-1">Human resources</label>
-  						<input type="checkbox" id="contact-area-2" name="contact-area-2" value="commercialization">
-  						<label for="contact-area-1">Commercialization</label>
-  						<input type="checkbox" id="contact-area-3" name="contact-area-3" value="systems">
-  						<label for="contact-area-1">Systems</label>
+						<!-- Checkbox radio-->
+						<input type="radio" name="area" value="Human resources">
+						<label for="">Human resources</label>
+						<input type="radio" name="area" value="Commercialization">
+						<label for="">Commercialization</label>
+						<input type="radio" name="area" value="Systems">
+						<label for="">Systems</label>
   						<!---->
   						<label>Phone number</label>
 						<input type="text" name="phone-number">
@@ -110,7 +112,7 @@
 				<div>
 					<h2>Objective</h2>
 					<p>
-						Providing the right solutions and getting products into customers' 
+						Providing the right solutions and getting products into customers 
 						hands with the support of store team members. 
 					</p>
 				</div>
@@ -181,7 +183,7 @@
 
 		<!-- Footer-->
 		<footer>
-			<h4>Rosario, Argentina</h4>
+			<p>Rosario, Argentina</p>
 			<a href="https://www.linkedin.com">
 				<img src="images/Linkedin.svg" alt="Linkedin icon is missing" width="30">
 			</a>
@@ -194,9 +196,9 @@
 			<a href="https://twitter.com">
 				<img src="images/Twitter.svg" alt="Twitter icon is missing" width="30">
 			</a>
-			<small>
+			<p>
 				Copyright © 2022 Radium Rocket. All rights reserved.
-			</small>
+			</p>
 		</footer>
 	</body>
 </html>

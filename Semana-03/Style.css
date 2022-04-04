@@ -46,60 +46,8 @@ aside {
 
 body {
     width: 1440px;
+    height: 1024px;
 }
-
-/* Sidebar */
-
-aside {
-  background-color: #FFFFFF;
-  width:336px;
-  height: 1024px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 20px;
-  border-right: 1px black solid;
-  padding-left: 40px;
-}
-
-aside input[type=text] {
-  width: 257px;
-  height: 35px;
-  box-sizing: border-box;
-  border: 2px solid #373867;
-  border-radius: 4px;
-  font-size: 14px;
-  background-color: white;
-  background-image:url("file:///C:/Users/Julian/Desktop/Curso%20RR/HTML/BaSP-M2022-Etapa-1/Semana-03/images/Search-icon-01.svg");
-  background-position: 12px 7px;
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-}
-
-.sidebar-title-01 {
-  position: relative;
-  font: Raleway;
-  font-size: 24px;
-  top: 146px;
-  width: 86px;
-  padding-bottom: 21px;
-  border-bottom: 5px solid #AACE9B;
-}
-
-#sidebar-links ul{
-  list-style: 0;
-}
-
-
-
-
-
-
-
-
-
-
 
 /* header */
 
@@ -108,6 +56,7 @@ header {
   width: 1064px;
   height: 156px;
   left: 376px;  
+  z-index: 10;
   background-color: #FFFFFF;
 }
 
@@ -133,11 +82,141 @@ header {
   border-bottom: 3px solid #AACE9B;
 }
 
+/* Sidebar */
+
+aside {
+  position: absolute;
+  background-color: #FFFFFF;
+  width:323px;
+  height: 1024px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  padding-top: 20px;
+  border-right: 1px black solid;
+  padding-right: 53px;
+  font: Raleway;
+  color: #545454;
+  overflow-y: scroll;
+}
+
+aside input[type=text] {
+  position: relative;
+  top: 10px;
+  left: 45px;
+  width: 257px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 2px solid #373867;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  background-image:url("file:///C:/Users/Julian/Desktop/Curso%20RR/HTML/BaSP-M2022-Etapa-1/Semana-03/images/Search-icon-01.svg");
+  background-position: 12px 7px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+.sidebar-title-01 {
+  position: relative;
+  top: 146px;
+  left: 45px;
+  width: 86px;
+  border-bottom: 5px solid #AACE9B;
+  padding-bottom: 21px;
+  font-size: 24px;
+  color: #000000;
+}
+
+#sidenav-01 {
+  position: relative;
+  top: 269px;
+  left: 45px;
+}
+
+.sidebar-title-02 {
+  position: relative;
+  top: 517px;
+  left: 45px;
+  width: 180px;
+  border-bottom: 5px solid #AACE9B;
+  padding-bottom: 21px;
+  font-size: 24px;
+  color: #000000;
+}
+
+#sidebar-p {
+  position: relative;
+  top: 589px;
+  left: 45px;
+  width: 280px;
+  line-height: 21px;
+}
+
+#sidenav-02 {
+  position: relative;
+  top: 766px;
+}
+
+/* footer */
+
+footer {
+  position: fixed;
+  top: 925px;
+  left: 376px;
+  right: 0px;
+  bottom: 0px;
+  height: 138px;
+  width: 1064px;
+  z-index: 10;
+  background-color: #FFFFFF;
+  font: Roboto;
+  color: #545454;
+}
+
+.location {
+  position: relative;
+  bottom: -33px;
+  left: 122px;
+  height: 19px;
+  width: 136px;
+  padding-top: 7px;
+  padding-left: 289px;
+  padding-right: 444px;
+  border-top: 3px solid #AACE9B;
+}
+
+#footernav {
+  position: relative;
+  bottom: -43px;
+  left: 378px;
+  height: 24px;
+}
+
+#footernav a{
+  padding-right: 28px;
+
+}
+
+#copyright {
+  position: relative;
+  bottom: -53px;
+  left: 305px;
+  height: 17px;
+
+}
+
+
+
 /* body */
 
 main {
   position: absolute;
   left: 376px;
   top: 156px;
+  right: 0px ;
+  bottom: 0px;
   padding-left: ;
 }

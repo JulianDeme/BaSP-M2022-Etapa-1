@@ -43,68 +43,101 @@ aside {
  width:25%;
 
 }
-/* Header */
 
-.hamburguer {
-  border-radius: 25px;
-  width: 35px;
-  height: 5px;
-  background-color: #AACE9B;
-  margin: 6px 0;
-}
-
-.header-title {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 35px;
-}
-
-.separation-bar {
-  left: 122px;
-  width: 868px;
-  border: 3px solid #AACE9B;
-}
-
-main {
-  margin-left:376px;
-  padding-left: 10px;
-}
-
-header {
-  width: 1064px;
-  margin-left:376px;
-  padding-left: 10px;
-}
-
-footer {
-  margin-left:376px;
-  padding-left: 10px;
+body {
+    width: 1440px;
 }
 
 /* Sidebar */
 
 aside {
-  width:356px;
+  background-color: #FFFFFF;
+  width:336px;
   height: 1024px;
-  float: left;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
-  overflow-x: hidden;
   padding-top: 20px;
   border-right: 1px black solid;
-  padding-right: 20px;
+  padding-left: 40px;
 }
 
-.sidebar-title {
+aside input[type=text] {
+  width: 257px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 2px solid #373867;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  background-image:url("file:///C:/Users/Julian/Desktop/Curso%20RR/HTML/BaSP-M2022-Etapa-1/Semana-03/images/Search-icon-01.svg");
+  background-position: 12px 7px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+.sidebar-title-01 {
+  position: relative;
+  font: Raleway;
   font-size: 24px;
-  font-family: Raleway;
-  font-weight: bold;
+  top: 146px;
+  width: 86px;
+  padding-bottom: 21px;
+  border-bottom: 5px solid #AACE9B;
+}
 
+#sidebar-links ul{
+  list-style: 0;
 }
 
 
 
+
+
+
+
+
+
+
+
+/* header */
+
+header {
+  position: fixed;
+  width: 1064px;
+  height: 156px;
+  left: 376px;  
+  background-color: #FFFFFF;
+}
+
+#hamburger {
+  position: relative;
+  width: 36px;
+  height: 33px;
+  top: 40px; 
+  left: 33px;
+}
+
+.header-title {
+  position: relative;
+  font-family: Raleway, Roboto, Poppins;
+  font-size: 30px;
+  top: 28px;
+  left: 122px;
+  bottom: 44px;
+  width: 868px;
+  height: 37px;
+  line-height: 35px;
+  padding-bottom: 23px;
+  border-bottom: 3px solid #AACE9B;
+}
+
+/* body */
+
+main {
+  position: absolute;
+  left: 376px;
+  top: 156px;
+  padding-left: ;
+}

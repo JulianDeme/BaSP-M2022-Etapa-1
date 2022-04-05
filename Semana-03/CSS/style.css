@@ -1,55 +1,48 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+/* Element selectors */
 
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-html, body, #root {
-  height: 100%
-}
-
-aside {
- width:25%;
-
-}
 
 body {
     width: 1440px;
     height: 1024px;
 }
 
-/* header */
+/* Sidebar element selectors */
+
+aside {
+  position: fixed;
+  background-color: #FFFFFF;
+  width:323px;
+  height: 1024px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  padding-top: 20px;
+  padding-right: 53px;
+  font-family: Raleway,sans-serif;
+  color: #545454;
+  background-color: #F6F6F6;
+}
+
+aside input[type=text] {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: 257px;
+  height: 38px;
+  box-sizing: border-box;
+  border: 2px solid #373867;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  background-image:url("file:///C:/Users/Julian/Desktop/Curso%20RR/HTML/BaSP-M2022-Etapa-1/Semana-03/images/Search-icon-01.svg");
+  background-position: 12px 9px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+/* header element selectors */
 
 header {
   position: fixed;
@@ -60,107 +53,18 @@ header {
   background-color: #FFFFFF;
 }
 
-#hamburger {
-  position: relative;
-  width: 36px;
-  height: 33px;
-  top: 40px; 
-  left: 33px;
-}
+/* body element selectors*/
 
-.header-title {
-  position: relative;
-  font-family: Raleway, Roboto, Poppins;
-  font-size: 30px;
-  top: 28px;
-  left: 122px;
-  bottom: 44px;
-  width: 868px;
-  height: 37px;
-  line-height: 35px;
-  padding-bottom: 23px;
-  border-bottom: 3px solid #AACE9B;
-}
-
-/* Sidebar */
-
-aside {
+main {
   position: absolute;
-  background-color: #FFFFFF;
-  width:323px;
-  height: 1024px;
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  left: 376px;
+  top: 156px;
+  right: 0px ;
   bottom: 0px;
-  padding-top: 20px;
-  border-right: 1px black solid;
-  padding-right: 53px;
-  font: Raleway;
-  color: #545454;
-  overflow-y: scroll;
+  font-family: Poppins, sans-serif;
 }
 
-aside input[type=text] {
-  position: relative;
-  top: 10px;
-  left: 45px;
-  width: 257px;
-  height: 35px;
-  box-sizing: border-box;
-  border: 2px solid #373867;
-  border-radius: 4px;
-  font-size: 14px;
-  background-color: white;
-  background-image:url("file:///C:/Users/Julian/Desktop/Curso%20RR/HTML/BaSP-M2022-Etapa-1/Semana-03/images/Search-icon-01.svg");
-  background-position: 12px 7px;
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
-}
-
-.sidebar-title-01 {
-  position: relative;
-  top: 146px;
-  left: 45px;
-  width: 86px;
-  border-bottom: 5px solid #AACE9B;
-  padding-bottom: 21px;
-  font-size: 24px;
-  color: #000000;
-}
-
-#sidenav-01 {
-  position: relative;
-  top: 269px;
-  left: 45px;
-}
-
-.sidebar-title-02 {
-  position: relative;
-  top: 517px;
-  left: 45px;
-  width: 180px;
-  border-bottom: 5px solid #AACE9B;
-  padding-bottom: 21px;
-  font-size: 24px;
-  color: #000000;
-}
-
-#sidebar-p {
-  position: relative;
-  top: 589px;
-  left: 45px;
-  width: 280px;
-  line-height: 21px;
-}
-
-#sidenav-02 {
-  position: relative;
-  top: 766px;
-}
-
-/* footer */
+/* footer element selectors*/
 
 footer {
   position: fixed;
@@ -172,56 +76,149 @@ footer {
   width: 1064px;
   z-index: 10;
   background-color: #FFFFFF;
-  font: Roboto;
+  font-family: Roboto,sans-serif;
   color: #545454;
 }
 
-.location {
-  position: relative;
-  bottom: -33px;
-  left: 122px;
-  height: 19px;
-  width: 136px;
-  padding-top: 7px;
-  padding-left: 289px;
-  padding-right: 444px;
-  border-top: 3px solid #AACE9B;
-}
 
-#footernav {
-  position: relative;
-  bottom: -43px;
-  left: 378px;
-  height: 24px;
-}
-
-#footernav a{
-  padding-right: 28px;
-
-}
-
-#copyright {
-  position: relative;
-  bottom: -53px;
-  left: 305px;
-  height: 17px;
-
-}
+/* Other selectors */
 
 
+/* Sidebar other selectors */
 
-/* body */
-
-main {
+.sidebar-title-01 {
   position: absolute;
-  left: 376px;
-  top: 156px;
-  right: 0px ;
-  bottom: 0px;
-  font: Poppins;
+  top: 146px;
+  left: 45px;
+  width: 86px;
+  border-bottom: 5px solid #AACE9B;
+  padding-bottom: 21px;
+  font-size: 24px;
+  color: #000000;
 }
 
-/* section-01 */
+#sidenav-01 {
+  position: absolute;
+  top: 240px;
+  left: 45px;
+  width: 331px;
+  height: 142px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.li-01-01 {
+  left: 0px;
+  top: 0px;
+  width: 200px;
+  height: 25px;
+  padding-top: 33px;
+  border-bottom: 1px solid #A4A4A4;
+}
+
+.li-01-02 {
+  left: 0px;
+  top: 0px;
+  width: 200px;
+  height: 25px;
+  padding-top: 33px;
+  padding-bottom: 73px;
+  border-bottom: 1px solid #A4A4A4;
+}
+
+.sidebar-title-02 {
+  position: absolute;
+  top: 517px;
+  left: 45px;
+  width: 180px;
+  border-bottom: 5px solid #AACE9B;
+  padding-bottom: 21px;
+  font-size: 24px;
+  color: #000000;
+}
+
+#sidebar-p {
+  position: absolute;
+  top: 589px;
+  left: 34px;
+  width: 280px;
+  height: 147;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+#sidenav-02 {
+  position: absolute;
+  width: 331px;
+  height: 186px;
+  top: 766px;
+  left: 45px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.li-02-01 {
+  left: 34px;
+  top: 0px;
+  width: 280px;
+  padding-left: 11px;
+  padding-bottom: 18px;
+  padding-top: 22px;
+  border-bottom: 1px solid #A4A4A4;
+}
+
+.li-02-02 {
+  left: 34px;
+  top: 0px;
+  width: 280px;
+  padding-left: 11px;
+  padding-top: 22px;
+}
+
+.sidenav-02 p {
+  width: 221px;
+  padding-left: 14px;
+}
+
+.block-01 {
+ display: inline-block;
+}
+
+.block-02 {
+ display: inline-block;
+}
+
+.block-03 {
+ display: inline-block;
+}
+
+/* header other selectors */
+
+#hamburger {
+  position: relative;
+  width: 36px;
+  height: 33px;
+  top: 40px; 
+  left: 33px;
+}
+
+.header-title {
+  position: relative;
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+  top: 28px;
+  left: 122px;
+  bottom: 44px;
+  width: 868px;
+  height: 37px;
+  line-height: 35px;
+  padding-bottom: 23px;
+  border-bottom: 3px solid #AACE9B;
+}
+
+/* body other selectors */
+
+/* Body section-01 */
 
 #welcome h1 {
   position: absolute;
@@ -276,7 +273,7 @@ main {
   border: 1px solid #373867;
 }
 
-/* section-02 */
+/* Body section-02 */
 
 #what-can-you-do h2 {
   position: absolute;
@@ -394,7 +391,7 @@ main {
   line-height: 42px;
 }
 
-/* section-03 */
+/* Body section-03 */
 
 #why-trackgenix h2 {
   position: absolute;
@@ -423,7 +420,7 @@ main {
   padding-bottom: 30px;
 }
 
-/* section-04 */
+/* Body section-04 */
 
 #contact-form h2 {
   position: absolute;
@@ -463,7 +460,7 @@ main {
   position: absolute;
 }
 
-/* section-05 */
+/* Body section-05 */
 
 #round-background {
   position: absolute;
@@ -556,7 +553,7 @@ main {
   left: 427px;
 } 
 
-/* section-06 */
+/* Body section-06 */
 
 #products-business-support {
   position: absolute;
@@ -582,9 +579,8 @@ main {
 #products-business-support li {
   font-size: 18px;
   line-height: 27px;
+  padding-top: 27px;
 }
-
-
 
 #products {
   position: absolute;
@@ -605,4 +601,36 @@ main {
   width: 342;
   top: 108px;
   left: 684px;
+}
+
+/* footer other selectors */
+
+.location {
+  position: relative;
+  bottom: -33px;
+  left: 122px;
+  height: 19px;
+  width: 136px;
+  padding-top: 7px;
+  padding-left: 289px;
+  padding-right: 444px;
+  border-top: 3px solid #AACE9B;
+}
+
+#footernav {
+  position: relative;
+  bottom: -43px;
+  left: 378px;
+  height: 24px;
+}
+
+#footernav a{
+  padding-right: 28px;
+}
+
+#copyright {
+  position: relative;
+  bottom: -53px;
+  left: 295px;
+  height: 17px;
 }

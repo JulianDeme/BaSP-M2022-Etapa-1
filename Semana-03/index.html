@@ -14,6 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;
         0,600;1,400&family=Raleway:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+        
 	</head>
 	<body>
 
@@ -137,27 +138,35 @@
 				<section>
 					<div id="contact-form">
 						<h2>Contact form</h2>
-						<form>
-							<label for="bname">Bussines name</label>
-							<input type="text" id="bname" name="bussines-name">
-							<label for="email">Email</label>
-							<input type="email" id="email" name="email">
+						<form class="form-root">
+								<label class="label-01" for="bname">Bussines name</label>
+								<input type="text" id="bname" name="bussines-name">
+								<label class="label-02" for="email">Email</label>
+								<input type="email" id="email" name="email">
 							<!-- Checkbox radio-->
-							<p>Contact area</p>
-							<div id="checks">
-								<input type="radio" name="area" id="hresources" value="Human resources">
-								<label for="hresources" class="check">Human resources</label>
-								<input type="radio" name="area" id="commercial" value="Commercialization">
-								<label for="commercial" class="check">Commercialization</label>
-								<input type="radio" name="area" id="systems" value="Systems">
-								<label for="systems" class="check">Systems</label>
+							<div class="form-03">
+								<p>Contact area</p>
+								<ul>
+									<li>
+										<input type="radio" name="area" id="hresources" value="Human resources">
+										<label for="hresources">Human resources</label>
+									</li>
+									<li>
+										<input type="radio" id="commercial" value="Commercialization">
+										<label for="commercial" class="check">Commercialization</label>
+									</li>
+									<li>
+										<input type="radio" id="systems" value="Systems">
+										<label for="systems" class="check">Systems</label>
+									</li>
+								</ul>
 							</div>
-	  						<!---->
-	  						<label for="pnumber">Phone number</label>
-							<input type="text" id="pnumber" name="phone-number">
-							<label for="contact-message-id">Message</label>
-							<textarea id="contact-message-id" name="contact-message-name"></textarea>
-							<input type="submit" value="Submit">
+		  					<!---->
+			  					<label class="label-03" for="pnumber">Phone number</label>
+								<input type="text" id="pnumber" name="phone-number">
+								<label class="label-04" for="contact-msg">Message</label>
+								<textarea id="contact-msg" name="contact-message-name"></textarea>
+								<input class="form-button" type="submit" value="Submit">
 						</form>
 					</div>
 				</section>
@@ -189,28 +198,28 @@
 						<div id="products">
 						<h2>Products</h2>
 							<ol>
-								<li>Funcionalities</li>
-								<li>Dounloads</li>
-								<li>integrations</li>
-								<li>Extras</li>
+								<li><a href="">Funcionalities</a></li>
+								<li><a href="">Dounloads</a></li>
+								<li><a href="">integrations</a></li>
+								<li><a href="">Extras</a></li>
 							</ol>
 						</div>
 						<div id="business">
 						<h2>Business</h2>
 							<ol>
-								<li>About us</li>
-								<li>Clients</li>
-								<li>Rsources</li>
-								<li>Blog</li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Clients</a></li>
+								<li><a href="">Rsources</a></li>
+								<li><a href="">Blog</a></li>
 							</ol>
 						</div>
 						<div id="support">
 							<h2>Support</h2>
 							<ol>
-								<li>Help</li>
-								<li>Tutorials</li>
-								<li>API</li>
-								<li>Contact</li>
+								<li><a href="">Help</a></li>
+								<li><a href="">Tutorials</a></li>
+								<li><a href="">API</a></li>
+								<li><a href="">Contact</a></li>
 							</ol>
 						</div>
 					</div>

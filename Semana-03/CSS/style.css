@@ -10,36 +10,34 @@ body {
 
 aside {
   position: fixed;
-  background-color: #FFFFFF;
   width:323px;
   height: 1024px;
-  position: fixed;
+  padding-top: 20px;
+  padding-right: 53px;
   top: 0px;
   left: 0px;
   bottom: 0px;
-  padding-top: 20px;
-  padding-right: 53px;
+  background-color: #F6F6F6;
   font-family: Raleway,sans-serif;
   color: #545454;
-  background-color: #F6F6F6;
 }
 
 aside input[type=text] {
   position: absolute;
-  top: 30px;
-  left: 40px;
   width: 257px;
   height: 38px;
+  padding: 12px 20px 12px 40px;
+  top: 30px;
+  left: 40px;
   box-sizing: border-box;
   border: 2px solid #373867;
   border-radius: 4px;
-  font-size: 14px;
   background-color: white;
   background-image:url("file:///C:/Users/Julian/Desktop/Curso%20RR/HTML/BaSP-M2022-Etapa-1/Semana-03/images/Search-icon-01.svg");
   background-position: 12px 9px;
   background-size: 15px 15px;
   background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
+  font-size: 14px;
 }
 
 /* header element selectors */
@@ -218,7 +216,7 @@ footer {
 
 /* body other selectors */
 
-/* Body section-01 */
+/* Body section-01-Welcome */
 
 #welcome h1 {
   position: absolute;
@@ -273,7 +271,7 @@ footer {
   border: 1px solid #373867;
 }
 
-/* Body section-02 */
+/* Body section-02-What? */
 
 #what-can-you-do h2 {
   position: absolute;
@@ -391,7 +389,7 @@ footer {
   line-height: 42px;
 }
 
-/* Body section-03 */
+/* Body section-03-Why? */
 
 #why-trackgenix h2 {
   position: absolute;
@@ -420,7 +418,7 @@ footer {
   padding-bottom: 30px;
 }
 
-/* Body section-04 */
+/* Body section-04-Contact */
 
 #contact-form h2 {
   position: absolute;
@@ -433,34 +431,103 @@ footer {
   padding-bottom: 23px;
   border-bottom: 5px solid #AACE9B;
 }
-
-#contact-form form {
-  position: absolute;
-  background-color: #9E9E9E;
-  top: 2210px;
-  left: 122px;
-  height: 516px;
-  width: 868px;
-  padding-left: 40px;
-}
-
-#contact-form label {
+#contact-form p{
   font-size: 14px;
   line-height: 21px;
+  padding-bottom: 18px;
 }
 
-.check {
-  display: block;
+.label-01, .label-02, .label-03 , .label-04 {
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 5px;
+  width: 210px;
+  height: 21px;
+}
+
+.label-01 {
+  position: absolute;
+  top: 2279px;
+  left: 133px;
+}
+.label-02 {
+  position: absolute;
+  top: 2279px;
+  left: 584px;
+}
+
+.label-03 {
+  position: absolute;
+  top: 2416px;
+  left: 584px;
+}
+.label-04 {
+  position: absolute;
+  top: 2546px;
+  left: 133px;
+}
+
+.form-03 p {
+  position: absolute;
+  width: 210px;
+  height: 21px;
+  top: 2380px;
+  left: 133px;
+}
+
+.form-03 label {
+  padding-left: 20px;
+}
+
+.form-03 ul {
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  top: 2423px;
+  left: 133px;
+}
+
+.form-03 li {
+  padding-bottom: 15px;
+  width: 218px;
+  height: 19px;
   font-size: 12px;
   line-height: 18px;
-  font-weight: light;
+  font-weight: 300;
+
 }
 
-#checks {
+#bname, #email, #pnumber {
+  width: 395px;
+  height: 49px;
+}
+
+#bname {
   position: absolute;
+  top: 2305px;
+  left: 133px;
+}
+#email {
+  position: absolute;
+  top: 2305px;
+  left: 584px;
 }
 
-/* Body section-05 */
+#pnumber {
+  position: absolute;
+  top: 2441px;
+  left: 584px;
+}
+
+#contact-msg {
+  position: absolute;
+  top: 2567px;
+  left: 133px;
+  width: 848px;
+  height: 126px;
+}
+
+/* Body section-05-History */
 
 #round-background {
   position: absolute;
@@ -553,7 +620,7 @@ footer {
   left: 427px;
 } 
 
-/* Body section-06 */
+/* Body section-06-PBS */
 
 #products-business-support {
   position: absolute;

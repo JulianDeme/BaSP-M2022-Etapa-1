@@ -55,8 +55,8 @@ header {
 
 main {
   position: absolute;
-  left: 376px;
   top: 156px;
+  left: 376px;
   right: 0px ;
   bottom: 0px;
   font-family: Poppins, sans-serif;
@@ -66,12 +66,12 @@ main {
 
 footer {
   position: fixed;
+  width: 1064px;
+  height: 138px;
   top: 925px;
   left: 376px;
   right: 0px;
   bottom: 0px;
-  height: 138px;
-  width: 1064px;
   z-index: 10;
   background-color: #FFFFFF;
   font-family: Roboto,sans-serif;
@@ -86,61 +86,61 @@ footer {
 
 .sidebar-title-01 {
   position: absolute;
+  width: 86px;
+  padding-bottom: 21px;
   top: 146px;
   left: 45px;
-  width: 86px;
   border-bottom: 5px solid #AACE9B;
-  padding-bottom: 21px;
   font-size: 24px;
   color: #000000;
 }
 
 #sidenav-01 {
   position: absolute;
-  top: 240px;
-  left: 45px;
   width: 331px;
   height: 142px;
+  top: 240px;
+  left: 45px;
   font-size: 18px;
   line-height: 21px;
 }
 
 .li-01-01 {
-  left: 0px;
-  top: 0px;
   width: 200px;
   height: 25px;
   padding-top: 33px;
+  top: 0px; 
+  left: 0px;
   border-bottom: 1px solid #A4A4A4;
 }
 
 .li-01-02 {
-  left: 0px;
-  top: 0px;
   width: 200px;
   height: 25px;
   padding-top: 33px;
   padding-bottom: 73px;
+  top: 0px; 
+  left: 0px;
   border-bottom: 1px solid #A4A4A4;
 }
 
 .sidebar-title-02 {
   position: absolute;
+  width: 180px;
+  padding-bottom: 21px;
   top: 517px;
   left: 45px;
-  width: 180px;
   border-bottom: 5px solid #AACE9B;
-  padding-bottom: 21px;
   font-size: 24px;
   color: #000000;
 }
 
 #sidebar-p {
   position: absolute;
+  width: 280px;
+  height: 147;  
   top: 589px;
   left: 34px;
-  width: 280px;
-  height: 147;
   font-size: 18px;
   line-height: 21px;
 }
@@ -156,21 +156,21 @@ footer {
 }
 
 .li-02-01 {
-  left: 34px;
-  top: 0px;
   width: 280px;
+  padding-top: 22px;
   padding-left: 11px;
   padding-bottom: 18px;
-  padding-top: 22px;
+  top: 0px;
+  left: 34px;
   border-bottom: 1px solid #A4A4A4;
 }
 
 .li-02-02 {
-  left: 34px;
-  top: 0px;
   width: 280px;
-  padding-left: 11px;
   padding-top: 22px;
+  padding-left: 11px;
+  top: 0px;
+  left: 34px;
 }
 
 .sidenav-02 p {
@@ -202,16 +202,16 @@ footer {
 
 .header-title {
   position: relative;
-  font-family: Poppins, sans-serif;
-  font-size: 30px;
+  width: 868px;
+  height: 37px;
+  padding-bottom: 23px;
   top: 28px;
   left: 122px;
   bottom: 44px;
-  width: 868px;
-  height: 37px;
-  line-height: 35px;
-  padding-bottom: 23px;
   border-bottom: 3px solid #AACE9B;
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+  line-height: 35px;
 }
 
 /* body other selectors */
@@ -222,8 +222,8 @@ footer {
   position: absolute;
   width: 413px;
   height: 236px;
-  left: 15px;
   top: 10px;
+  left: 15px;
   font-size: 64px;
   line-height: 96px;
   font-weight: 700;
@@ -233,19 +233,19 @@ footer {
 #welcome img {
   position: absolute;
   top: 21px;
-  right: 21px;
   left: 573px;
+  right: 21px;
 }
 
 #welcome  h2 {
   position: absolute;
   width: 426px;
   height: 84px;
-  left: 24px;
   top: 289px;
+  left: 24px;
   font-size: 28px;
-  font-style: italic;
   line-height: 42px;
+  font-style: italic;
 }
 
 #welcome p {
@@ -264,11 +264,11 @@ footer {
   height: 51px;
   top: 638px;
   left: 16px;
+  background-color: #AACE9B;
+  border: 1px solid #373867;
   border-radius: 4px;
   font-size: 13px;
   text-transform: uppercase;
-  background-color: #AACE9B;
-  border: 1px solid #373867;
 }
 
 /* Body section-02-What? */
@@ -277,12 +277,12 @@ footer {
   position: absolute;
   width: 868px;
   height: 55px;
+  padding-bottom: 23px;
   top: 693px;
   left: 122px;
+  border-bottom: 5px solid #AACE9B;
   font-size: 48px;
   line-height: 72px;
-  padding-bottom: 23px;
-  border-bottom: 5px solid #AACE9B;
 }
 
 #record-hours img {
@@ -298,8 +298,8 @@ footer {
   top: 840px;
   left: 224px;
   font-size: 28px;
-  font-weight: bold;
   line-height: 42px;
+  font-weight: bold;
 }
 #record-hours p{
   position: absolute;
@@ -324,8 +324,8 @@ footer {
   top: 840px;
   left: 751px;
   font-size: 28px;
-  font-weight: bold;
   line-height: 42px;
+  font-weight: bold;
 }
 #generate-reports p{
   position: absolute;
@@ -350,8 +350,8 @@ footer {
   top: 1174px;
   left: 224px;
   font-size: 28px;
-  font-weight: bold;
   line-height: 42px;
+  font-weight: bold;
 }
 #manage-resources p{
   position: absolute;
@@ -376,8 +376,8 @@ footer {
   top: 1174px;
   left: 751px;
   font-size: 28px;
-  font-weight: bold;
   line-height: 42px;
+  font-weight: bold;
 }
 #designate-roles p{
   position: absolute;
@@ -395,12 +395,12 @@ footer {
   position: absolute;
   width: 868px;
   height: 55px;
+  padding-bottom: 23px;
   top: 1593px;
   left: 122px;
+  border-bottom: 5px solid #AACE9B;
   font-size: 48px;
   line-height: 72px;
-  padding-bottom: 23px;
-  border-bottom: 5px solid #AACE9B;
 }
 
 #why-trackgenix ul {
@@ -424,25 +424,25 @@ footer {
   position: absolute;
   width: 868px;
   height: 55px;
+  padding-bottom: 23px;
   top: 2063px;
   left: 122px;
+  border-bottom: 5px solid #AACE9B;
   font-size: 48px;
   line-height: 72px;
-  padding-bottom: 23px;
-  border-bottom: 5px solid #AACE9B;
 }
 #contact-form p{
+  padding-bottom: 18px;
   font-size: 14px;
   line-height: 21px;
-  padding-bottom: 18px;
 }
 
 .label-01, .label-02, .label-03 , .label-04 {
-  font-size: 14px;
-  line-height: 21px;
-  padding-bottom: 5px;
   width: 210px;
   height: 21px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .label-01 {
@@ -488,9 +488,9 @@ footer {
 }
 
 .form-03 li {
-  padding-bottom: 15px;
   width: 218px;
   height: 19px;
+  padding-bottom: 15px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 300;
@@ -531,12 +531,12 @@ footer {
 
 #round-background {
   position: absolute;
-  background-color:  #D9E0D6;
-  border-radius: 50%;
-  height: 604px;
   width: 1054px;
-  left: 5px;
+  height: 604px;
   top: 2873px;
+  left: 5px;
+  background-color: #D9E0D6;
+  border-radius: 50%;
 }
 
 #round-background h2{
@@ -570,18 +570,18 @@ footer {
 
 .p-01 {
   position: absolute;
-  top: 273px;
-  left: 220px;
   width: 300px;
   height: 60px;
+  top: 273px;
+  left: 220px;
 }
 
 .p-02 {
   position: absolute;
-  top: 460px;
-  left: 555px;
   width: 208px;
   height: 60px;
+  top: 460px;
+  left: 555px;
 }
 
 .img-bo {
@@ -631,22 +631,22 @@ footer {
 }
 
 #products-business-support h2 {
+  width: 268px;
+  border-bottom: 5px solid #AACE9B;
   font-size: 24px;
   line-height: 36px;
   font-weight: bolder;
-  width: 268px;
-  border-bottom: 5px solid #AACE9B;
 }
 
 #products-business-support ol {
-  list-style-type: numbers;
   padding-left: 45px;
+  list-style-type: numbers;
 }
 
 #products-business-support li {
+  padding-top: 27px;
   font-size: 18px;
   line-height: 27px;
-  padding-top: 27px;
 }
 
 #products {
@@ -674,10 +674,10 @@ footer {
 
 .location {
   position: relative;
-  bottom: -33px;
-  left: 122px;
-  height: 19px;
   width: 136px;
+  height: 19px;
+  left: 122px;
+  bottom: -33px;
   padding-top: 7px;
   padding-left: 289px;
   padding-right: 444px;
@@ -686,9 +686,9 @@ footer {
 
 #footernav {
   position: relative;
-  bottom: -43px;
-  left: 378px;
   height: 24px;
+  left: 378px;
+  bottom: -43px;
 }
 
 #footernav a{
@@ -697,7 +697,7 @@ footer {
 
 #copyright {
   position: relative;
-  bottom: -53px;
-  left: 295px;
   height: 17px;
+  left: 295px;
+  bottom: -53px;
 }

@@ -1,0 +1,33 @@
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	min-height: 144px;
+	height: 17vh;
+	background-color: #EDEDED;
+	font-family:'Roboto', sans-serif;
+}
+
+footer nav {
+	display: flex;
+	justify-items: space-between;
+}
+
+footer nav a {
+	margin: 0px 12px;
+}
+
+footer p {
+	font-size: 16px;
+	font-weight: 400;
+	color: #545454;
+}
+
+
+

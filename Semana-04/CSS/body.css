@@ -1,15 +1,10 @@
 
 body {
+	position: fixed;
 	display: flex;
 	margin: 0;
-	height: 100vh;
 	width: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-   #main-flex {
-    width: 66%;
-  }
+	height: 100vh;
 }
 
 #main-flex {
@@ -19,13 +14,18 @@ body {
 	height: 100vh;
 }
 
+@media only screen and (min-width: 768px) {
+	#main-flex {
+	 width: 66%;
+   }
+ }
+
 
 main {
 	display: flex;
 	flex-direction: column;
 	align-content: space-between;
 	box-sizing: border-box;
-	flex:  1;
 	overflow: auto;
 	margin: 0px;
 	padding: 0px 17px;
@@ -56,11 +56,22 @@ section {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	flex: 1 1;
 }
 
-#section-01 {
+
+#section-01-title {
+	display: flex;
+	flex-direction: row;
 	align-items: center;
 }
+
+#section-01-title div {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
 
 #section-01 h1 {
 	text-align: center;
@@ -71,11 +82,6 @@ section {
 	color: #373867;
 }
 
-#section-01 div {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-around;
-}
 
 #section-01 h2 {
 	align-self: center;
@@ -114,10 +120,35 @@ section {
 	width: 250px;
 }
 
+@media only screen and (max-width: 768px) {
+#section-02 img {
+	width: 208px;
+	height: 237px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+#section-02 img {
+	width: 180px;
+	height: 202px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
 #section-02 div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+#section-02 div {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	}
 }
 
 #section-02 h3 {
@@ -128,8 +159,17 @@ section {
 	font-family: 'Roboto', sans-serif;
 }
 
+@media only screen and (max-width: 768px) {
 #section-02 p {
 	text-align: center;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#section-02 p {
+	text-align: center;ç
+	width: 300px;
+	}
 }
 
 
@@ -236,10 +276,18 @@ section {
 #section-06 h2{
 	width: 152px;
 }
-
+@media only screen and (max-width: 768px) {
 #section-06 div {
 	display: flex;
 	flex-direction: column;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	#section-06 div {
+	display: flex;
+	flex-direction: column;
+	}
 }
 
 #section-06 ol {

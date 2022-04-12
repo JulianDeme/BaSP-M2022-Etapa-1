@@ -1,22 +1,25 @@
-@media only screen and (max-width: 768px) {
   aside {
     display: none;
-  }
+    flex-direction: column;
+    align-content: flex-start;
+    box-sizing: border-box;
+    padding: 25px;
+    width: 33%;
+    height: 100vh;
+    background-color: #E0E0E026;
+    font-family: 'Raleway', sans-serif;
+    color: #373867;  
 }
 
 @media only screen and (min-width: 768px) {
-aside {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  box-sizing: border-box;
-  padding-top: 25px;
-  padding-left: 25px;
-  width: 33%;
-  height: 100vh;
-  background-color: #E0E0E026;
-  font-family: 'Raleway', sans-serif;
-  color: #373867;
+  aside {
+    display: flex;
+  }
+}
+
+@media only screen and (max-height: 675px) {
+  aside {
+    overflow: auto;
   }
 }
 
@@ -39,18 +42,50 @@ aside input[type=text] {
   font-size: 14px;
 }
 
+
 aside p {
-  margin-right: 25px;
+  padding-bottom: 10px;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   color: #545454;           
 }
 
+@media only screen and (max-width: 950px), (max-height: 770px) { 
+  aside p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #545454;           
+  }
+}
+
+aside li {
+  list-style: none;
+  width: 90%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #A4A4A4;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-title {
+  font-size: 18px;
+  line-height: 20px;
+  }
+}
+
+aside ul {
+  margin: -16px 0px;
+}
+
 .sidebar-title {
   box-sizing: border-box;
+  padding-top: 10px;
   padding-right: 10px;
-  margin-bottom: ;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
   border-bottom: 5px solid #AACE9B;
   font-size: 24px;
   line-height: 28px;
@@ -65,8 +100,31 @@ aside p {
   width: 200px;
 }
 
-aside li {
-  padding-top: 24px;
-  padding-bottom: 24px;
+aside a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #545454;
 }
+
+.li-02 {
+  display: flex;
+  align-items: center;
+}
+
+.li-02 p {
+  padding-left: 20px;
+}
+
+.li-03 {
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+}
+
+.li-03 p {
+  padding-left: 20px;
+}
+
 

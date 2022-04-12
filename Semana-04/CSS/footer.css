@@ -9,8 +9,7 @@ footer {
 	padding: 0px;
 	border-top: 5px solid #AACE9B;
 	width: 100%;
-	min-height: 144px;
-	height: 9vh;
+	height: 180px;
 	background-color: #EDEDED;
 	font-family:'Roboto', sans-serif;
 }
@@ -29,6 +28,7 @@ footer nav a {
 }
 
 footer p {
+	margin: 5px;
 	font-size: 16px;
 	font-weight: 400;
 	color: #545454;

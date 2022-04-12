@@ -1,5 +1,72 @@
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   aside {
     display: none;
   }
 }
+
+@media only screen and (min-width: 768px) {
+aside {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  box-sizing: border-box;
+  padding-top: 25px;
+  padding-left: 25px;
+  width: 33%;
+  height: 100vh;
+  background-color: #E0E0E026;
+  font-family: 'Raleway', sans-serif;
+  color: #373867;
+  }
+}
+
+aside input[type=text] {
+  justify-self: flex-start;
+  min-width: 180px;
+  max-width: 260px;
+  width: 90%;
+  height: 38px;
+  padding: 12px 20px 12px 40px;
+  top: 30px;
+  left: 40px;
+  box-sizing: border-box;
+  border: 2px solid #373867;
+  border-radius: 4px;
+  background-image:url("file:///C:/Users/Julian/Desktop/Curso%20RR/HTML/BaSP-M2022-Etapa-1/Semana-04/images/Search-icon-01.svg");
+  background-position: 12px 9px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  font-size: 14px;
+}
+
+aside p {
+  margin-right: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #545454;           
+}
+
+.sidebar-title {
+  box-sizing: border-box;
+  padding-right: 10px;
+  margin-bottom: ;
+  border-bottom: 5px solid #AACE9B;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+#st-01 {
+  width: 100px;
+}
+
+#st-02 {
+  width: 200px;
+}
+
+aside li {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+

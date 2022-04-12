@@ -25,59 +25,52 @@
 		<!-- Sidebar-->
 		<aside>
 			<input type="text" name="search" placeholder="Search">
-			<p class="sidebar-title-01">Menu</p>
-			<div id="sidenav-01">
-				<nav>
-					<ul>
-						<li class="li-01-01"><a href="#">Home</a></li>
-						<li class="li-01-01"><a href="#">Sign Up</a></li>
-						<li class="li-01-02"><a href="#">Log In</a></li>
-					</ul>
-				</nav>
-			</div>	
-				<p class="sidebar-title-02">Get in touch</p>
-				<div id="sidebar-p">
-					<p>
-						Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, 
-						ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. 
-						Sed nulla amet lorem feugiat tempus aliquam
-					</p>
-				</div>	
-				<div id="sidenav-02">
-					<ul>
-						<li class="li-02-01">
-							<div class="block-01">
-								<a href="#">
-									<img src="images/Mail-01.png" alt="Mail-01" width="30">
-								</a>
-							</div>
-							<div class="block-01">
-								<p>information@trackgenix.tld</p>
-							</div>
-						</li>
-						<li class="li-02-01">
-							<div class="block-02">
-								<a href="#">
-									<img src="images/Phone-01.png" alt="Phone-01" width="30">
-								</a>
-							</div>
-							<div class="block-02">
-								<p>1234 Somewhere Road #8254</p><p>Nashville, TN 00000-0000</p>
-							</div>
-						</li>
-						<li class="li-02-02">	
-							<div class="block-03">
-								<a href="#">
-									<img src="images/Adress-01.png" alt="Address-01" width="30">
-								</a>
-							</div>
-							<div class="block-03">
-								<p>(000) 000-0000</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<p id="st-01" class="sidebar-title">Menu</p>
+			<nav>
+				<ul>
+					<li class="li-01"><a href="#">Home</a></li>
+					<li class="li-01"><a href="#">Sign Up</a></li>
+					<li class="li-01"><a href="#">Log In</a></li>
+				</ul>
+			</nav>
+			<p id="st-02" class="sidebar-title">Get in touch</p>
+			<p>
+				Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, 
+				ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. 
+				Sed nulla amet lorem feugiat tempus aliquam
+			</p>
+			<ul id="contact-info">
+				<li class="li-02">
+					<div>
+						<a href="#">
+							<img src="images/Mail-01.png" alt="Mail-01">
+						</a>
+					</div>
+					<div>
+						<p>information@trackgenix.tld</p>
+					</div>
+				</li>
+				<li class="li-02">
+					<div>
+						<a href="#">
+							<img src="images/Phone-01.png" alt="Phone-01">
+						</a>
+					</div>
+					<div>
+						<p>1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
+					</div>
+				</li>
+				<li class="li-02">	
+					<div>
+						<a href="#">
+							<img src="images/Adress-01.png" alt="Address-01">
+						</a>
+					</div>
+					<div>
+						<p>(000) 000-0000</p>
+					</div>
+				</li>
+			</ul>
 		</aside>
 
 		<div id="main-flex">
@@ -96,7 +89,7 @@
 						<article>
 							<h1>Welcome to Trackgenix!</h1>
 							<div>
-								<img src="images/image-landing-page01.png" alt="image-landing-page01" width=>
+								<img src="images/image-landing-page01.png" alt="image-landing-page01" width="30">
 								<h2>A free website for everyone at Trackgenix!</h2>
 							</div>
 							<p>
@@ -147,11 +140,6 @@
 						<li>Company decisions</li>
 					</ul>
 				</section>
-
-
-
-
-
 				<section id="section-04">
 					<h2>Contact form</h2>
 					<form>
@@ -165,7 +153,7 @@
 						</div>
 						<!-- Checkbox radio-->
 						<div>
-							<p>Contact area</p>
+							<p class="label-form">Contact area</p>
 							<ul>
 								<li>
 									<input type="radio" name="area" id="hresources" value="Human resources">
@@ -195,66 +183,56 @@
 						</div>
 					</form>
 				</section>
-				<section>
-					<div id="round-background">
-						<div>
-							<h2 class="history-title-01">Trackgenix</h2>
-							<h2 class="history-title-02">History</h2>
-							<p class="p-01">
-								Trackgenix was founded on April 1, 2014, by college dropouts James Bond 
-								and Steve Pitt, who brought to the new company a vision of changing 
-								the way people viewed computers. 
-							</p>
-						</div>
-						<div class="img-bo">
-							<img src="images/Background-objetive.png" alt="Data security-icon-01" width="269">
-						</div>
-						<div class="img-ds">
-							<img src="images/Data-security-icon-01.png" alt="Data-security-icon-01" width="78">
-						</div>
-						<div class="img-ei">
-							<img src="images/Effective-intime-icon-01.png" alt="Effective-intime-icon-01" width="78">
-						</div>
-						<div>
-							<h2 class="objective-title">Objective</h2>
-							<p class="p-02">
-								Providing the right solutions and getting products into customers 
-								hands with the support of store team members. 
-							</p>
-						</div>
-						<div id="white-line-01"></div>
-						<div id="white-line-02"></div>
+				<section id="section-05">
+					<div>
+						<h2 id="trackhis">Trackgenix History</h2>
+						<p>
+							Trackgenix was founded on April 1, 2014, by college dropouts James Bond 
+							and Steve Pitt, who brought to the new company a vision of changing 
+							the way people viewed computers. 
+						</p>
+					<div>
+						<h2 id="obj">Objective</h2>
+						<p>
+							Providing the right solutions and getting products into customers 
+							hands with the support of store team members. 
+						</p>
 					</div>
 				</section>
-				<section>
-					<div id="products-business-support">
-						<div id="products">
-							<h2>Products</h2>
-							<ol>
-								<li><a href="">Funcionalities</a></li>
-								<li><a href="">Dounloads</a></li>
-								<li><a href="">integrations</a></li>
-								<li><a href="">Extras</a></li>
-							</ol>
-						</div>
-						<div id="business">
-							<h2>Business</h2>
-							<ol>
-								<li><a href="">About us</a></li>
-								<li><a href="">Clients</a></li>
-								<li><a href="">Rsources</a></li>
-								<li><a href="">Blog</a></li>
-							</ol>
-						</div>
-						<div id="support">
-							<h2>Support</h2>
-							<ol>
-								<li><a href="">Help</a></li>
-								<li><a href="">Tutorials</a></li>
-								<li><a href="">API</a></li>
-								<li><a href="">Contact</a></li>
-							</ol>
-						</div>
+
+
+
+
+
+
+
+				<section id="section-06">
+					<div id="products">
+						<h2>Products</h2>
+						<ol>
+							<li><a href="#">Funcionalities</a></li>
+							<li><a href="#">Dounloads</a></li>
+							<li><a href="#">integrations</a></li>
+							<li><a href="#">Extras</a></li>
+						</ol>
+					</div>
+					<div id="business">
+						<h2>Business</h2>
+						<ol>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Clients</a></li>
+							<li><a href="#">Rsources</a></li>
+							<li><a href="#">Blog</a></li>
+						</ol>
+					</div>
+					<div id="support">
+						<h2>Support</h2>
+						<ol>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Tutorials</a></li>
+							<li><a href="#">API</a></li>
+							<li><a href="#">Contact</a></li>
+						</ol>
 					</div>
 				</section>
 			</main>

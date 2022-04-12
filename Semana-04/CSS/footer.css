@@ -7,11 +7,10 @@ footer {
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
-	padding-top: ;
 	border-top: 5px solid #AACE9B;
 	width: 100%;
 	min-height: 144px;
-	height: 17vh;
+	height: 9vh;
 	background-color: #EDEDED;
 	font-family:'Roboto', sans-serif;
 }

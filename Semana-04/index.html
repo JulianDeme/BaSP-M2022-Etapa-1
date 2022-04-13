@@ -8,10 +8,10 @@
 		<title>Welcome to Trackgenix!</title>
 		<link rel="stylesheet" type="text/css" href="CSS/reset.css">
 		<link rel="stylesheet" type="text/css" href="CSS/fonts.css">
-		<link rel="stylesheet" type="text/css" href="CSS/body.css">
 		<link rel="stylesheet" type="text/css" href="CSS/header.css">
 		<link rel="stylesheet" type="text/css" href="CSS/footer.css">
 		<link rel="stylesheet" type="text/css" href="CSS/sidebar.css">
+		<link rel="stylesheet" type="text/css" href="CSS/body.css">
 
 
 		<!-- Fonts-->
@@ -87,12 +87,10 @@
 			<main>
 				<section id="section-01">
 						<article>
-							<div id="section-01-title">
-								<div>
-									<h1>Welcome to Trackgenix!</h1>
-									<h2>A free website for everyone at Trackgenix!</h2>
-								<div>
-								<img src="images/image-landing-page01.png" alt="image-landing-page01" width="30">
+							<h1>Welcome to Trackgenix!</h1>
+							<div>		
+								<h2>A free website for everyone at Trackgenix!</h2>
+								<img src="images/image-landing-page01.png" alt="image-landing-page01">
 							</div>
 							<p>
 								Here, you can register the hours worked in any project for all employees, 
@@ -101,36 +99,47 @@
 						</article>
 						<button type="button">Lean More</button>
 				</section>
+
 				<section id="section-02">
 					<h2>What can you do?</h2>
-					<div>
-						<img src="images/Record-hours.png" alt="Record-hours">
-						<h3>Record hours</h3>
-						<p>
-							Create, modify and delete projects and assign them to any employee/s.
-						</p>
-					</div>
-					<div>
-						<img src="images/Generate-reports.png" alt="Generate-reports">
-						<h3>Generate reports</h3>
-						<p>
-							Emit reports to have a better view and understanding of all the projects.
-						</p>
-					</div>
-					<div>
-						<img src="images/Manage-resources.png" alt="Manage-resources">
-						<h3>Manage resources</h3>
-						<p>
-							You will be able to see all the information you need to recognize 
-							hours of work in the best way possible.
-						</p>
-					</div>
-					<div>
-						<img src="images/Designate-roles.png" alt="Designate-roles">
-						<h3>Designate roles</h3>
-						<p>
-							Establish which employee may have the title of "Project Manager".
-						</p>
+					<div id="section-02-main-container">
+							<div>
+								<img src="images/Record-hours.png" alt="Record-hours">
+								<div class="section-02-third-container">
+									<h3>Record hours</h3>
+									<p>
+										Create, modify and delete projects and assign them to any employee/s.
+									</p>
+								</div>
+							</div>
+							<div>
+								<img src="images/Generate-reports.png" alt="Generate-reports">
+								<div class="section-02-third-container">
+									<h3>Generate reports</h3>
+									<p>
+										Emit reports to have a better view and understanding of all the projects.
+									</p>
+								</div>
+							</div>
+							<div>
+								<img src="images/Manage-resources.png" alt="Manage-resources">
+								<div class="section-02-third-container">
+									<h3>Manage resources</h3>
+									<p>
+										You will be able to see all the information you need to recognize 
+										hours of work in the best way possible.
+									</p>
+								</div>
+							</div>
+							<div>
+								<img src="images/Designate-roles.png" alt="Designate-roles">
+								<div class="section-02-third-container">
+									<h3>Designate roles</h3>
+									<p>
+										Establish which employee may have the title of "Project Manager".
+									</p>
+								</div>	
+							</div>
 					</div>
 				</section>
 				<section id="section-03">
@@ -180,10 +189,10 @@
 							<label class="label-form" for="contact-msg">Message</label>
 							<textarea id="contact-msg" name="contact-message-name"></textarea>
 						</div>
-						<div class="button-container">
+					</form>
+					<div class="button-container">
 						<input class="form-button" type="submit" value="Submit">
 						</div>
-					</form>
 				</section>
 				<section id="section-05">
 					<div>
@@ -209,7 +218,7 @@
 
 
 				<section id="section-06">
-					<div id="products">
+					<div>
 						<h2>Products</h2>
 						<ol>
 							<li><a href="#">Funcionalities</a></li>
@@ -218,7 +227,7 @@
 							<li><a href="#">Extras</a></li>
 						</ol>
 					</div>
-					<div id="business">
+					<div>
 						<h2>Business</h2>
 						<ol>
 							<li><a href="#">About us</a></li>
@@ -227,7 +236,7 @@
 							<li><a href="#">Blog</a></li>
 						</ol>
 					</div>
-					<div id="support">
+					<div>
 						<h2>Support</h2>
 						<ol>
 							<li><a href="#">Help</a></li>

@@ -1,25 +1,28 @@
+/* Header*/
+
+/* header element selectors */
 
 header {
 	display: flex;
-	box-sizing: border-box;
 	flex-direction: row;
 	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 75px;	
 	margin: 0px;
 	padding: 0px;
 	padding-left: 25px;
 	border-bottom: 5px solid #AACE9B;
-	width: 100%;
-	min-height: 75px;
 	background-color: #EDEDED;
 	font-family: 'Poppins', sans-serif;
 }
 
 header h2 {
+	border: none;
 	font-size: 40px;
 	font-weight: 700;
 	padding-left: 17px;
 	color: #373867;
-	border: none;
 }
 
 @media only screen and (max-width: 390px) {

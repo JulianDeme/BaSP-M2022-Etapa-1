@@ -1,10 +1,25 @@
 # Trackgenix Landing Page
 This project is about the landing page of the human resources website of Trackgenix SA. 
+
+# Figma
+## Week-01
+
+Website layout and flow made with Figma.
+
 # HTML
-This is the html code of the landing page of Trackgenx SA´s human reources website. Previously designed in Figma.
-It has been written using HTML as the basic structure of the page, taking into account all the important elements that a web page as such should have. Having in mind the future clear reading of the code.
+## Week-02
+
+Desktop landing page basic structure made with HTML. 
+Taking into account all the important elements that a web page should have.
+Having in mind the future clear reading of the code.
+
 # CSS
-This is the CSS style sheet of the landing page written in HTML.
-It has been coded with the purpose to recreate the exact same layout made previously in Figma. But with the intention of not being responsive at the moment.
+## Week-03
+
+Desktop landing page layout made with CSS, implementing pixel perfect design technique. Using the structure given by the HTML code made the week before.
+
+## Week-04
+
+Responsive landing page made with CSS, implementing flexbox and media queries. Using ,and modifying by necessity, the HTML code made in Week-02.
 
 

@@ -32,12 +32,12 @@ var place;
 place = longString.indexOf(" ");
 console.log("Primer espacio en posición:" , place);
 
-// D.
+// F.
 var nameString;
 longString = 'julián demeglio';
 place = longString.indexOf(" ");
-nameString = longString.substring(0,1).toUpperCase() + longString.substring(1 , place + 1)
- + longString.substring(place + 1, place + 2).toUpperCase() + longString.substring(place + 2);   
+nameString = longString.substring(0,1).toUpperCase() + longString.substring(1 , place + 1).toLowerCase()
+ + longString.substring(place + 1, place + 2).toUpperCase() + longString.substring(place + 2).toLowerCase();   
 console.log(nameString);
 
 

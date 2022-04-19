@@ -1,42 +1,58 @@
+console.log("03");
+
 // A.
 
-const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 
-"Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-console.log("Mes 5:" , meses[4]);
-console.log("Mes 11:" , meses[10]);
+console.log("03-A");
+
+const months = ["January", "February", "March", "April", "May", "June", 
+"July", "August", "September", "October", "November", "December"];
+console.log("Month 5:" , months[4]);
+console.log("Month 11:" , months[10]);
  
 // B.
 
-const meses1 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 
-"Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-console.log(meses1.sort());
+console.log("03-B");
+
+const months1 = ["January", "February", "March", "April", "May", "June", 
+"July", "August", "September", "October", "November", "December"];
+console.log(months.sort());
 
 // C.
 
-meses.unshift("Posicin0");
-meses.push("Posición14");
-console.log(meses);
+console.log("03-C");
+
+months.unshift("Position0");
+months.push("Position14");
+console.log(months);
 
 // D.
 
-meses.shift();
-meses.pop();
-console.log(meses);
+console.log("03-D");
+
+months.shift();
+months.pop();
+console.log(months);
 
 // E.
 
-const meses2 = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 
-"Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-console.log(meses2.reverse());
+console.log("03-E");
+
+const months2 = ["January", "February", "March", "April", "May", "June", 
+"July", "August", "September", "October", "November", "December"];
+console.log(months2.reverse());
 
 // F.
 
-console.log(meses.join("-"));
+console.log("03-F");
+
+console.log(months.join("-"));
 
 // G.
 
-var meses3 = meses.slice(4,10);
-console.log(meses3);
+console.log("03-G");
+
+var months3 = months.slice(4,10);
+console.log(months3);
 
 
 

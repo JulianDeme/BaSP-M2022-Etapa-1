@@ -1,4 +1,8 @@
+console.log("04");
+
 // A.
+
+console.log("04-A");
 
 var randomNum = Math.random();
 console.log(randomNum);
@@ -10,30 +14,32 @@ if (randomNum>= 0.5) {
 
 // B.
 
+console.log("04-B");
+
 var age;
 age = Math.floor(Math.random() * 101);
 console.log(age);
 switch (true) {
     case (age < 3):
-        console.log("Bebé");
+        console.log("Baby");
         break;
     case (3 <= age &&  age < 13):
-        console.log("Niño");
+        console.log("Child");
         break;
      case (13 <= age &&  age < 20):
-        console.log("Adolecente");
+        console.log("Teen");
         break;            
     case (20 <= age &&  age < 31):
-        console.log("Joven");
+        console.log("Young");
         break;
     case (31 <= age &&  age < 61):
-        console.log("Adulto");
+        console.log("Adult");
         break;   
     case (61 <= age &&  age < 75):
-        console.log("Adulto mayor");
+        console.log("Old adult");
         break;
     case (75 <= age):
-        console.log("Anciano");
+        console.log("Elder");
         break;   
     default:
         console.log("Error");

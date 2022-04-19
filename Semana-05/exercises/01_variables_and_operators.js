@@ -1,25 +1,33 @@
+console.log("01");
+
 // A.
 
-var numA , numB, totSum;
+console.log("01-A");
+
+var numA , numB, totAdd;
 numA = 2;
 numB = 3;
-console.log("ValorA:" , numA , "ValorB:" , numB);
-totSum = numA + numB;
-console.log ("Suma:", totSum);
+console.log("Value A:" , numA , "Value B:" , numB);
+totAdd = numA + numB;
+console.log ("Addition:", totAdd);
 
 // B.
 
-var string1, string2, sumString;
+console.log("01-B");
+
+var string1, string2, addString;
 string1 = 'Julián';
-string2 = 'Demeglio'
+string2 = 'Demeglio';
 console.log("String1:", string1, "String2:" , string2);
-sumString = string1 +  string2;
-console.log("Concatenación:" , sumString);
+addString = string1 +  string2;
+console.log("Concatenation:" , addString);
 
 // C.
 
-totSum = string1.length + string2.length;
-console.log("Letras en strings:" , totSum);
+console.log("01-C");
+
+totAdd = string1.length + string2.length;
+console.log("Letters in strings:" , totAdd);
 
 
 

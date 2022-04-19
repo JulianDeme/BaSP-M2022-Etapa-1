@@ -1,34 +1,43 @@
+console.log("05");
+
 // A.
 
-const palabras = ["palabra1", "palabra2", "palabra3", "palabra4", "palabra5"];
+console.log("05-A");
 
-for (let i = 0; i < palabras.length; i++) {
-    alert(palabras[i])
+const words = ["word1", "word2", "word3", "word4", "word5"];
+for (let i = 0; i < words.length; i++) {
+    alert(words[i]);
   }
 
 
 // B.
 
-var palabrasMod;
-for (let i = 0; i < palabras.length; i++) {
-    palabrasMod = palabras[i].substring(0,1).toUpperCase() + palabras[i].substring(1);
-    alert(palabrasMod)
+console.log("05-B");
+
+var wordsMod;
+for (let i = 0; i < words.length; i++) {
+  wordsMod = words[i].substring(0,1).toUpperCase() + words[i].substring(1);
+    alert(wordsMod);
   }
 
 // C.
 
+console.log("05-C");
+
 var sentence = '';
-for (let i = 0; i < palabras.length; i++) {
-    sentence = sentence + palabras[i];
+for (let i = 0; i < words.length; i++) {
+    sentence = sentence + words[i];
   }
 alert(sentence);
 
 // D.
 
-const palabrasVacio = [];
+console.log("05-D");
+
+const wordsEmpty = [];
 for (let i = 0; i < 10; i++) {
-    palabrasVacio[i] = i;
+  wordsEmpty[i] = i;
   }
-  console.log(palabrasVacio);
+  console.log(wordsEmpty);
 
 

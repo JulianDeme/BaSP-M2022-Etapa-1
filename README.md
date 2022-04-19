@@ -37,4 +37,13 @@ Landing page uploaded using GitHub pages, making it possible to visualize said p
 <br />
 https://juliandeme.github.io/BaSP-M2022-Etapa-1/Semana-04/
 
+# JavaScrypt
+## Week-05
+
+ Basic JS exercises to settle a good foundation for future implementations.
+<br />
+
+### CSS
+Correction of the work delivered in the weekly task 04, based on the feedback received from the tutor.
+
 

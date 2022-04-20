@@ -59,7 +59,9 @@ function validateIntegerV2 (num) {
     if (!Number.isInteger(num)) {
         alert ("Number \"" + num + "\" in not an integer");
         return Math.round(num);
-    } 
+    } else {
+        return num;
+    }
 }
 
 // E.

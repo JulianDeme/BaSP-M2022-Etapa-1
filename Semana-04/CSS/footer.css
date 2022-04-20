@@ -1,7 +1,5 @@
 /* Footer */
 
-/* Footer element selectors */
-
 footer {
 	display: flex;
 	flex-direction: column;
@@ -37,11 +35,10 @@ footer p {
 	color: #545454;
 }
 
-@media only screen and (max-width: 390px) {
+/* Media queries */
+
+@media only screen and (max-width: 480px) {
 	footer p {
 		font-size: 12px;
 	}	
 }
-
-
-

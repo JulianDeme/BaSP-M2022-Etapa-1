@@ -15,16 +15,16 @@ main {
 	align-content: space-between;
 	box-sizing: border-box;
 	overflow-x: hidden;
-	overflow-y: hidden;
+	overflow-y: auto;
 	width: 100%;
+	height: 100vh;
 	margin: 0px;
-	padding: 10px 17px 100px;
-
+	padding: 10px 20px 20px;
 	font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-	padding-bottom: 10px;
+main h1 {
+	padding-top: 10px;
 	text-align: center;
 	font-size: 50px;
 	font-weight: 400;
@@ -33,18 +33,14 @@ h1 {
 	;
 }
 
-form {
-	padding-bottom: 20px;
-}
-
-form div	{
+main form div	{
 	display: flex;
 	flex-direction: column;
 	align-content: flex-start;
-	padding-top: 23px;
+	padding-top: 10px;
 }
 
-form input {
+main form input {
 	width: 300px;
 	height: 40px;
 	border: 1px solid #373867;
@@ -52,7 +48,7 @@ form input {
 	border-radius: 4px;
 }
 
-a {
+main a {
 	text-decoration: none;
 	font-size: 14px;
 	font-style: italic;
@@ -68,7 +64,7 @@ a {
 	height: 100vh;
 }
 
-.label-form {
+main .label-form {
 	padding-bottom: 10px;
 	font-size: 14px;
 	font-weight: 700;
@@ -90,7 +86,7 @@ a {
 	line-height: 14px;
 }
 
-.form-button { 
+#form-button { 
 	box-sizing: border-box;
 	width: 95px;
 	height: 41px;
@@ -102,4 +98,11 @@ a {
 	line-height: 21px;
 	color: #373867;
 	text-transform: uppercase;
+}
+
+.input-msg {
+	padding-top: 5px;
+	font-size: 12px;
+	color: #F13312;
+	line-height: 15px;
 }

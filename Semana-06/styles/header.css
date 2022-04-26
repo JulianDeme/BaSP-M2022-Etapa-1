@@ -28,6 +28,10 @@ header img {
 	width: 5vh;
 }
 
+header a {
+	text-decoration: none;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 480px) {

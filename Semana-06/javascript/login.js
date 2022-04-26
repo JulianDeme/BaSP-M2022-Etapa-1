@@ -1,132 +1,133 @@
 window.onload = function () {
 
-    var inputEmail = document.getElementById('email');
-    var valueEmail = inputEmail.value;
-    console.log (valueEmail);
-    console.log (valueEmail.length);
-    var inputPassword = document.getElementById ('password');
-    var valuePassword = inputPassword.value;
-    console.log (valuePassword.length);
-    
+    var num = [0,1,2,3,4,5,6,7,8,9];
+    var letters= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n",'ñ',"o","p","q","r","s","t","u","v","w","x","y","z"];
+    var symbols = ['+','-','_','@','*'];
 
-    //inputEmail.addEventListener("blur" , blurEmail,true);
-    //inputEmail.addEventListener("focus" , focusEmail,true);
+    var email = document.getElementById('email');
+    var password = document.getElementById('password');
+    var button = document.getElementById('form-button');
+    email.addEventListener('focus', focusEmail);
+    email.addEventListener('blur', blurEmail);
+    password.addEventListener('focus', focusPassword);
+    password.addEventListener('blur', blurPassword);
+    button.addEventListener('click', loginClick);
+    var emailValue = document.getElementById('email').value;
+    var passwordValue = document.getElementById('email').value;
 
+    function blurEmail() {
 
-    
-
-    function blurEmptyEmail() {
-        document.getElementById("label-email").style.color = "#F13312";
-        document.getElementById("email").style.border = "1px solid #F13312";
-        document.getElementById("email-msg").innerHTML = "Email required";
-        console.log(inputEmail.value);
+        if (emailValidation()){
+            document.getElementById("label-email").style.color = "#49A37B";
+            document.getElementById("email").style.border = "1px solid #49A37B";
+            document.getElementById("email-msg").innerHTML = "";
+            emailValue = true;
+        } else {
+            document.getElementById("label-email").style.color = "#F13312";
+            document.getElementById("email").style.border = "1px solid #F13312";
+            document.getElementById("email-msg").innerHTML = "Email not valid ";
+            emailValue = false;
+        }
     }
 
-    function blurWrongEmail() {
-        document.getElementById("label-email").style.color = "#F13312";
-        document.getElementById("email").style.border = "1px solid #F13312";
-        document.getElementById("email-msg").innerHTML = "Email not valid ";
-    }
+    function focusEmail () {
 
-    function blurValidEmail() {
-        document.getElementById("label-email").style.color = "#49A37B";
-        document.getElementById("email").style.border = "1px solid #49A37B";
-        document.getElementById("email-msg").innerHTML = "";
-    }
-
-    function focusEmail() {
         document.getElementById("label-email").style.color = "#373867";
+        document.getElementById("email").style.border = "1px solid #373867";
         document.getElementById("email-msg").innerHTML = "";
-        
     }
 
     function blurPassword() {
-        document.getElementById("label-password").style.color = "#F13312";
-        document.getElementById("password").style.border = "1px solid #F13312";
-        document.getElementById("password-msg1").innerHTML = "Password required";
+
+        if (passwordValidation(document.getElementById('password').value)){
+            document.getElementById("label-password").style.color = "#49A37B";
+            document.getElementById("password").style.border = "1px solid #49A37B";
+            document.getElementById("password-msg").innerHTML = "";
+            passwordValue = true;
+        } else {
+            document.getElementById("label-password").style.color = "#F13312";
+            document.getElementById("password").style.border = "1px solid #F13312";
+            document.getElementById("password-msg").innerHTML = "Password not valid";
+            passwordValue = false;
+        }
     }
 
-    function focusPassword() {
+    function focusPassword () {
+
         document.getElementById("label-password").style.color = "#373867";
-        document.getElementById("password-msg1").innerHTML = "";
-        
-    }
-    function blurWrongPassword() {
-        document.getElementById("label-email").style.color = "#F13312";
-        document.getElementById("email").style.border = "1px solid #F13312";
-        document.getElementById("email-msg").innerHTML = "Password not valid ";
+        document.getElementById("password").style.border = "1px solid #373867";
+        document.getElementById("password-msg").innerHTML = "";
     }
 
-    function blurValidPassword() {
-        document.getElementById("label-email").style.color = "#49A37B";
-        document.getElementById("email").style.border = "1px solid #49A37B";
-        document.getElementById("email-msg").innerHTML = "";
-    }
+    function emailValidation() {
 
-    function emailCharValidation (email) {
+        var mailformat =/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var valueEmail = document.getElementById('email').value;
 
-        var dotChar = false;
-        var atChar = false;
-
-        for (let i = 0; i < email.length; i++) {
-
-        if (email[i] === ".") {
-            dotChar = true;
-        }
-        if (email[i] === "@") {
-            atChar = true;
-        }
-        if (dotChar && atChar) {
-            return true;
-        }else {
-            return false;
-        }
-    }
-
-    function emailLenghtValidation (email) {
-
-        if (email.length > 3) {
+        if (valueEmail.match(mailformat)) {
             return true;
         } else {
             return false;
         }
     }
 
+    function passwordValidation(valuePassword) {
 
+        var lettersValidation = false;
+        var numValidation = false;
+    
+        for (var i = 0; i < valuePassword.length; i++) {
+                for (let j = 0; j < symbols.length; j++) {
+                    if (valuePassword[i] == symbols[j]) {
+                        return false;
+                }
+            }
+        }
+        for (var i = 0; i < valuePassword.length; i++) {  
+            if (!numValidation) {
+                for (let j = 0; j < num.length; j++) {
+                if (valuePassword[i]==num[j]) {
+                    numValidation = true;
+                    break;
+                }   
+            } 
+            }
+        }
+        for (var i = 0; i < valuePassword.length; i++) {  
+        if (!lettersValidation) {
+            for (let j = 0; j < letters.length; j++) {
+                if (valuePassword[i]==letters[j]) {
+                    lettersValidation = true;
+                    break;
+                }
+            }
+            }
+        }
 
-    function emailValidation (valueEmail){
-
-        if (valueEmail) {
-
-            inputEmail.addEventListener("blur" , blurEmptyEmail);
-            inputEmail.addEventListener("focus" , focusEmail);  
-
-            var emCharVal = emailCharValidation (valueEmail);
-            var emLeVal = emailLenghtValidation (valueEmail) ;
-        } else if (emCharVal && emLeVal) {
-
-            inputEmail.addEventListener("blur" , blurValidEmail);
-            inputEmail.addEventListener("focus" , focusEmail); 
+        if (numValidation && lettersValidation) {
             return true;
-
-            } else {
-                inputEmail.addEventListener("blur" , blurWrongEmail);
-                inputEmail.addEventListener("focus" , focusEmail); 
+        } else {
+            return false;
         }
     }
-        
 
-
-
-
-    var emVal = emailValidation();
-    if (emVal) {
-        alert ("Email:" + valueEmail + "\n Password: " + valuePassword);
+    function loginClick(e) {
+        e.preventDefault();
+        var message = 'Info: ';
+        var newline = '\r\n';
+        if (emailValue && passwordValue) {
+            message += 'correct:' + newline  + 'User email: ' + document.getElementById('email').value 
+            + newline + 'Password: ' + document.getElementById('password').value;
+        } else {
+            message += 'incorrect. Please check the next items: '
+            if (!emailValue) {
+                message += newline + 'Email: Please enter a valid email.'
+            } if (!passwordValue) {
+                message += newline + 'Password: Please enter a valid password. It should contain only letters and numbers';
+            }
+        }
+        window.alert(message);
     }
-    
-
-
-    inputPassword.addEventListener("blur" , blurPassword);
-    inputPassword.addEventListener("focus" , focusPassword);
 }
-} 
+
+

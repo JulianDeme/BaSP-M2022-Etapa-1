@@ -9,15 +9,17 @@
 
 		<!-- CSS style sheets-->
 		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<!--
 		<link rel="stylesheet" type="text/css" href="../styles/fonts.css">
+		-->
+		<link rel="stylesheet" type="text/css" href="../styles/employee-signup.css">
 		<link rel="stylesheet" type="text/css" href="../styles/header.css">
 		<link rel="stylesheet" type="text/css" href="../styles/footer.css">
 		<link rel="stylesheet" type="text/css" href="../styles/sidebar.css">
-		<link rel="stylesheet" type="text/css" href="../styles/employee-signup.css">
 		<!-- -->
 
 		<!-- JS files-->
-		<script src="../javascript/login.js"></script>
+		<script src="../javascript/employee-signup.js"></script>
 		<!-- -->
 
 		<!-- Fonts-->
@@ -35,9 +37,9 @@
 			<p id="st-01" class="sidebar-title">Menu</p>
 			<nav>
 				<ul>
-					<li class="li-01"><a href="#">Home</a></li>
-					<li class="li-01"><a href="#">Sign Up</a></li>
-					<li class="li-01"><a href="#">Log In</a></li>
+					<li class="li-01"><a href="../views/index.html">Home</a></li>
+					<li class="li-01"><a href="../views/sign-up.html">Sign Up</a></li>
+					<li class="li-01"><a href="../views/login.html">Log In</a></li>
 				</ul>
 			</nav>
 			<p id="st-02" class="sidebar-title">Get in touch</p>
@@ -88,7 +90,7 @@
 			<header>
 				<div>
 					<img src="../assets/Hamburger-icon.png" alt="Hamburger-icon">
-				</div>
+				</div>	
 				<h2>Trackgenix SA</h2>
 			</header>
 			<!-- -->
@@ -99,55 +101,65 @@
 					<h1>Sign Up</h1>
 					<form>
 						<div>
-							<label class="label-form" for="name">Name</label>
-							<input type="text" id="name" name="Name">
+							<label class="label-form" id="lfname" for="fname">Name</label>
+							<input type="text" id="ifname" name="Name">
+							<p id="vName">Name required</p>
 						</div>
 						<div>
 							<label class="label-form" for="surname">Surname</label>
 							<input type="text" id="surname" name="Surame">
+							<p class="message">Surname required</p>
 						</div>
 	  					<div>
 			  				<label class="label-form" for="dni">DNI</label>
 							<input type="text" id="pdni" name="DNI">
+							<p class="message">DNI required</p>
 						</div>
 						<div>
 							<label class="label-form" for="birthdate">Birth date</label>
 							<input type="text" id="birthdate" name="Birth-date">
+							<p class="message">Birth date required</p>
 						</div>
                         <div>
                             <label class="label-form" for="pnumber">Phone number</label>
                           <input type="text" id="pnumber" name="phone-number">
+						  <p class="message">Phone number required</p>
                       </div>
                         <div>
 							<label class="label-form" for="address">Address</label>
 							<input type="text" id="address" name="Address">
+							<p class="message">Addres required</p>
 						</div>
                         <div>
 							<label class="label-form" for="location">Location</label>
 							<input type="text" id="location" name="Location">
+							<p class="message">Location required</p>
 						</div>
                         <div>
 							<label class="label-form" for="pcode">Postal code</label>
 							<input type="text" id="pcode" name="Postal-code">
+							<p class="message">Postal code required</p>
 						</div>
                         <div>
 							<label class="label-form" for="email">Email</label>
 							<input type="email" id="email" name="email">
+							<p class="message">Email required</p>
 						</div>
                         <div>
 							<label class="label-form" for="password">Password</label>
 							<input type="text" id="password" name="Password">
+							<p class="message">Password required</p>
 						</div>
                         <div>
 							<label class="label-form" for="rpassword">Repeat password</label>
 							<input type="text" id="rpassword" name="Repeat-password">
+							<p class="message">Passwords do not match</p>
 						</div>
 					</form>
 					<div class="button-container">
 						<input class="form-button" type="submit" value="Submit">
 					</div>
 				</section>
-
 			</main>
 			<!-- -->
 

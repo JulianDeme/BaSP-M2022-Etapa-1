@@ -4,6 +4,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	align-self: top;
 	align-items: center;
 	box-sizing: border-box;
 	width: 100%;

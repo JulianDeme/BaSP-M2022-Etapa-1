@@ -16,6 +16,10 @@
 		<link rel="stylesheet" type="text/css" href="../styles/login.css">
 		<!-- -->
 
+		<!-- JS files-->
+		<script src="../javascript/employee-signup.js"></script>
+		<!-- -->
+
 		<!-- Fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,23 +98,23 @@
                 <section>
                     <h1>Sign In</h1>
                     <form>
-                        <div>
+                        <div class="formdiv">
 							<label class="label-form" for="email">Email</label>
 							<input type="text" id="email" name="bussines-name">
 						</div>
-                        <div>
+                        <div class="formdiv">
 							<label class="label-form" for="password">Password</label>
 							<input type="text" id="password" name="bussines-name">
 						</div>
                     </form>
-                    <div>
-                        <input type="checkbox" id="rememberme" value="Remember me">
-                        <label for="rememberme">Remember me</label>
-                    </div>
-                    <div>
-                        <a href="#">Forgot password?</a>
-                    </div>
-                    <div class="button-container">
+					<div id="paralel">
+						<div>
+							<input type="checkbox" id="rememberme" value="Remember me">
+							<label for="rememberme">Remember me</label>
+						</div>
+						<a href="#">Forgot password?</a>
+					</div>
+					<div class="button-container">
 						<input class="form-button" type="submit" value="Submit">
 					</div>
                 </section>

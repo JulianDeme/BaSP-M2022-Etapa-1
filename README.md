@@ -49,6 +49,8 @@ Correction of the work delivered in the weekly task 04, based on the feedback re
 ## Week-06
 
 Functional Login and Signup pages made with JS, connected to the Landing page of the website. Implementing JS DOM (Document Object Model).
+<br />
+https://juliandeme.github.io/BaSP-M2022-Etapa-1/Semana-06/views/
 
 ### Bonus
 Functional form of the Landing page.

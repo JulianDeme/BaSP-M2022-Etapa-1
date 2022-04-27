@@ -1,12 +1,16 @@
 window.onload = function () {
 
+    //elements
+
     var num = [0,1,2,3,4,5,6,7,8,9];
     var letters= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n",'ñ',"o","p","q","r","s","t","u","v","w","x","y","z"];
     var symbols = ['+','-','_','@','*'];
-
     var email = document.getElementById('email');
     var password = document.getElementById('password');
     var button = document.getElementById('form-button');
+
+    //Event listeners
+
     email.addEventListener('focus', focusEmail);
     email.addEventListener('blur', blurEmail);
     password.addEventListener('focus', focusPassword);
@@ -15,9 +19,11 @@ window.onload = function () {
     var emailValue = document.getElementById('email').value;
     var passwordValue = document.getElementById('email').value;
 
+    //Functions
+
     function blurEmail() {
 
-        if (emailValidation()){
+        if (emailValidation()) {
             document.getElementById("label-email").style.color = "#49A37B";
             document.getElementById("email").style.border = "1px solid #49A37B";
             document.getElementById("email-msg").innerHTML = "";
@@ -119,9 +125,9 @@ window.onload = function () {
             message += 'correct:' + newline  + 'User email: ' + document.getElementById('email').value 
             + newline + 'Password: ' + document.getElementById('password').value;
         } else {
-            message += 'incorrect. Please check the next items: '
+            message += 'incorrect. Please check the next items: ';
             if (!emailValue) {
-                message += newline + 'Email: Please enter a valid email.'
+                message += newline + 'Email: Please enter a valid email.';
             } if (!passwordValue) {
                 message += newline + 'Password: Please enter a valid password. It should contain only letters and numbers';
             }

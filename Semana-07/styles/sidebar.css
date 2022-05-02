@@ -1,0 +1,126 @@
+/* Sidebar */
+
+aside {
+  display: none;
+  flex-direction: column;
+  align-content: flex-start;
+  box-sizing: border-box;
+  padding: 25px;
+  width: 33%;
+  max-width: 290px;
+  height: 100vh;
+  background-color: #E0E0E026;
+  font-family: 'Raleway', sans-serif;
+  color: #373867;  
+}
+
+aside input[type=text] {
+  justify-self: flex-start;
+  box-sizing: border-box;
+  padding: 12px 20px 12px 40px;
+  min-width: 180px;
+  width: 90%;
+  max-width: 260px;
+  height: 38px;
+  border: 2px solid #373867;
+  border-radius: 4px;
+  background-image:url("../assets/Search-icon-01.svg");
+  background-position: 12px 9px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  font-size: 14px;
+}
+
+aside p {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #545454;           
+}
+
+aside ul {
+  margin: -16px 0px;
+}
+
+aside li {
+  list-style: none;
+  width: 90%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #A4A4A4;
+}
+
+aside a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #545454;
+}
+
+.sidebar-title {
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 5px solid #AACE9B;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+#st-01 {
+  width: 100px;
+}
+
+#st-02 {
+  width: 200px;
+}
+
+.li-02 {
+  display: flex;
+  align-items: center;
+}
+
+.li-02 p {
+  padding-left: 20px;
+}
+
+.li-03 {
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+}
+
+.li-03 p {
+  padding-left: 20px;
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 768px) {
+  aside {
+    display: flex;
+  }
+
+  aside {
+    overflow: auto;
+  }
+
+  .sidebar-title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) { 
+  aside p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #545454;           
+  }
+}

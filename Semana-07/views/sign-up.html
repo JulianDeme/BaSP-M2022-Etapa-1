@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="jdemegliosch@gmail.com">
+		<title>Welcome to Trackgenix!</title>
+
+		<!-- CSS style sheets-->
+		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<!--
+		<link rel="stylesheet" type="text/css" href="../styles/fonts.css">
+		-->
+		<link rel="stylesheet" type="text/css" href="../styles/employee-signup.css">
+		<link rel="stylesheet" type="text/css" href="../styles/header.css">
+		<link rel="stylesheet" type="text/css" href="../styles/footer.css">
+		<link rel="stylesheet" type="text/css" href="../styles/sidebar.css">
+		<!-- -->
+
+		<!-- JS files-->
+		<script src="../javascript/employee-signup.js"></script>
+		<!-- -->
+
+		<!-- Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<!-- -->
+	</head>
+
+	<body>
+
+		<!-- Sidebar-->
+		<aside>
+			<input type="text" name="search" placeholder="Search">
+			<p id="st-01" class="sidebar-title">Menu</p>
+			<nav>
+				<ul>
+					<li class="li-01"><a href="../views/index.html">Home</a></li>
+					<li class="li-01"><a href="../views/sign-up.html">Sign Up</a></li>
+					<li class="li-01"><a href="../views/login.html">Log In</a></li>
+				</ul>
+			</nav>
+			<p id="st-02" class="sidebar-title">Get in touch</p>
+			<p>
+				Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, 
+				ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. 
+				Sed nulla amet lorem feugiat tempus aliquam
+			</p>
+			<ul id="contact-info">
+				<li class="li-02">
+					<div>
+						<a href="#">
+							<img src="../assets/Mail-01.png" alt="Mail-01">
+						</a>
+					</div>
+					<div>
+						<p>information</p>
+						<p>@trackgenix.tld</p>
+					</div>
+				</li>
+				<li class="li-02">
+					<div>
+						<a href="#">
+							<img src="../assets/Phone-01.png" alt="Phone-01">
+						</a>
+					</div>
+					<div>
+						<p>1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
+					</div>
+				</li>
+				<li class="li-03">	
+					<div>
+						<a href="#">
+							<img src="../assets/Adress-01.png" alt="Address-01">
+						</a>
+					</div>
+					<div>
+						<p>(000) 000-0000</p>
+					</div>
+				</li>
+			</ul>
+		</aside>
+		<!-- -->
+
+		<div id="main-flex">
+
+			<!-- Header-->
+			<header>
+				<div>
+					<img src="../assets/Hamburger-icon.png" alt="Hamburger-icon">
+				</div>	
+				<h2>Trackgenix SA</h2>
+			</header>
+			<!-- -->
+
+			<!-- Body-->
+			<main>
+                <section>
+					<h1>Sign Up</h1>
+					<form>
+						<div>
+							<label class="label-form" id="label-fname" for="fname">Name</label>
+							<input class="input-form" type="text" id="fname" name="name">
+							<p class="input-msg" id="name-msg"></p>
+						</div>
+						<div>
+							<label class="label-form" id="label-surname" for="surname">Surname</label>
+							<input class="input-form"  type="text" id="surname" name="surame">
+							<p class="input-msg" id="surname-msg"></p>
+						</div>
+	  					<div>
+			  				<label class="label-form" id="label-dni" for="dni">DNI</label>
+							<input class="input-form"  type="text" id="dni" name="dni">
+							<p class="input-msg" id="dni-msg"></p>
+						</div>
+						<div>
+							<label class="label-form" id="label-birthdate" for="birthdate">Birth date</label>
+							<input class="input-form"  type="text" id="birthdate" name="birth-date">
+							<p class="input-msg" id="birth-msg"></p>
+						</div>
+                        <div>
+                		    <label class="label-form" id="label-pnumber" for="pnumber">Phone number</label>
+                      		<input class="input-form"  type="text" id="pnumber" name="phone-number">
+							<p class="input-msg" id="phone-msg"></p>
+                        </div>
+                        <div>
+							<label class="label-form" id="label-address" for="address">Address</label>
+							<input class="input-form"  type="text" id="address" name="address">
+							<p class="input-msg" id="address-msg"></p>
+						</div>
+                        <div>
+							<label class="label-form" id="label-location" for="location">Location</label>
+							<input class="input-form"  type="text" id="location" name="location">
+							<p class="input-msg" id="location-msg"></p>
+						</div>
+                        <div>
+							<label class="label-form" id="label-pcode" for="pcode">Postal code</label>
+							<input class="input-form"  type="number" id="pcode" name="postal-code">
+							<p class="input-msg" id="postal-msg"></p>
+						</div>
+                        <div>
+							<label class="label-form" id="label-email" for="email">Email</label>
+							<input class="input-form"  type="email" id="email" name="email">
+							<p class="input-msg" id="email-msg"></p>
+						</div>
+                        <div>
+							<label class="label-form" id="label-password" for="password">Password</label>
+							<input class="input-form" type="password" id="password" name="password">
+							<p class="input-msg" id="password-msg"></p>
+						</div>
+                        <div>
+							<label class="label-form" id="label-rpassword" for="rpassword">Repeat password</label>
+							<input class="input-form"  type="password" id="rpassword" name="repeat-password">
+							<p class="input-msg" id="rpassword-msg"></p>
+						</div>
+					</form>
+					<div class="button-container">
+						<input id="form-button" type="submit" value="Submit">
+					</div>
+				</section>
+			</main>
+			<!-- -->
+
+			<!-- Footer-->
+			<footer>
+				<p>Rosario, Argentina</p>
+					<nav>
+						<a href="https://www.linkedin.com">
+							<img src="../assets/Linkedin.png" alt="Linkedin icon">
+						</a>
+						<a href="https://www.instagram.com">
+							<img src="../assets/Instagram.png" alt="Instagram icon">
+						</a>
+						<a href="https://www.facebook.com">
+							<img src="../assets/Facebook.png" alt="Facebook icon">
+						</a>
+						<a href="https://twitter.com">
+							<img src="../assets/Twitter.png" alt="Twitter icon">
+						</a>
+					</nav>
+				<p>Copyright © 2022 Radium Rocket. All rights reserved.</p>
+			</footer>
+		</div>		
+	</body>
+</html>

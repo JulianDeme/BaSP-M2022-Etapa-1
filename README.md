@@ -55,6 +55,20 @@ https://juliandeme.github.io/BaSP-M2022-Etapa-1/Semana-06/views/
 ### Bonus
 Functional form of the Landing page.
 
+## Week-07
+
+Fuction of the confirmation buttons extended to send the data loaded into them, to a web server via a HTTP request from JS.
+<br />
+https://juliandeme.github.io/BaSP-M2022-Etapa-1/Semana-07/views/
+
+### Bonus
+Pop-up alerst replaced with Modals made with HTML and CSS.
+
+### Details
+Week-06´s Sign Up completed thi week.
+
+
+
 
 
 

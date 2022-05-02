@@ -2,6 +2,8 @@ window.onload = function () {
 
     //elements
 
+    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
+
     var num = [0,1,2,3,4,5,6,7,8,9];
     var letters= ["a","b","c","d","e","f","g","h","i","j","k","l","m","n",'ñ',
     "o","p","q","r","s","t","u","v","w","x","y","z",
@@ -13,6 +15,12 @@ window.onload = function () {
 
     var emailConfirm = false;
     var passwordConfirm = false;
+    var dataConfirm = false;
+
+    var emailData = "rose@radiumrocket.com";
+    var passwordData = "BaSP2022";
+    console.log(emailData);
+    console.log(passwordData);
 
     //Event listeners
 
@@ -119,13 +127,31 @@ window.onload = function () {
         }
     }
 
+    function dataLogIn (emailData, passwordData) {
+
+        if ((emailData.localeCompare(document.getElementById('email').value)) + (passwordData.localeCompare(document.getElementById('password').value)) === 0) {
+            dataConfirm = true;
+        } else {
+            dataConfirm = false;
+        }
+    }
+
+
+
+
+
+
+
     function loginClick(e) {
+
         e.preventDefault();
-        var message = 'Info: ';
+        var message = '';
         var newline = '\r\n';
-        if (emailConfirm && passwordConfirm) {
-            message += 'correct:' + newline  + 'User email: ' + document.getElementById('email').value 
-            + newline + 'Password: ' + document.getElementById('password').value;
+
+        dataLogIn (emailData, passwordData);
+
+        if (emailConfirm && passwordConfirm && dataConfirm) {
+            logInRequest();
         } else {
             message += 'incorrect. Please check the next items: ';
             if (!emailConfirm) {
@@ -133,9 +159,31 @@ window.onload = function () {
             } if (!passwordConfirm) {
                 message += newline + 'Password: Please enter a valid password. It should contain only letters and numbers';
             }
+            if (emailConfirm && passwordConfirm) {
+                message += newline + 'Wrong email or password';
+            }
+            window.alert(message);
         }
-        window.alert(message);
+    }
+
+    function logInRequest () {
+
+        var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
+        var emailV = document.getElementById('email').value;
+        var passwordV = document.getElementById('password').value;
+        
+        fetch (url + '?email=' + emailV + '&password=' + passwordV)
+        .then (function(response){
+            return response.json();
+        })
+        .then (function(jsonResponse){
+            alert (jsonResponse.msg);
+        })
+        .catch(function(error){
+            console.log('error', error);
+        })
     }
 }
+
 
 

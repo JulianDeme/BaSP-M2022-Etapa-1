@@ -315,11 +315,11 @@ window.onload = function () {
         if (nameConfirmation && surnameConfirmation && dniConfirmation && birthDateConfirmation &&
              numberConfirmation && addressConfirmation && locationConfirmation && postalCodeConfirmation && 
              emailConfirmation && passwordConfirmation && rPasswordConfirmation) {
-            message = signingUp();
+            signUpRequest();
         } else {
             message = 'The following fields are in an incorrect format: ' + newline + notSigningUp();
+            window.alert(message);
         }
-        window.alert(message);
     }
 
     // Functions
@@ -328,7 +328,7 @@ window.onload = function () {
         
         var letterCounter = 0;
 
-        if (fieldToCheck.length >= 3) {
+        if (fieldToCheck.length > 3) {
             for (var i = 0; i < fieldToCheck.length; i++) {
                 for (var j = 0; j < letters.length; j++) {
                     if (fieldToCheck[i] == letters[j]) {
@@ -348,7 +348,7 @@ window.onload = function () {
         
         var letterCounter = 0;
 
-        if (fieldToCheck.length >= 3) {
+        if (fieldToCheck.length > 3) {
             for (var i = 0; i < fieldToCheck.length; i++) {
                 for (var j = 0; j < letters.length; j++) {
                     if (fieldToCheck[i] == letters[j]) {
@@ -368,7 +368,7 @@ window.onload = function () {
                  
         var numberCounter = 0;
 
-        if (fieldToCheck.length >= 7) {
+        if ((fieldToCheck.length >= 7) && (fieldToCheck.length <= 8)) {
             for (var i = 0; i < fieldToCheck.length; i++) {
                 for (var j = 0; j < num.length; j++) {
                     if (fieldToCheck[i] == num[j]) {
@@ -379,7 +379,7 @@ window.onload = function () {
                     }
                 }
             }
-        }   else {
+        } else {
             return false
         }
     }
@@ -497,7 +497,7 @@ window.onload = function () {
         var letterCounter = 0;
         var fieldToCheckLC = fieldToCheck.toLowerCase();
 
-        if (fieldToCheckLC.length >= 3) {
+        if (fieldToCheckLC.length > 3) {
             for (var i = 0; i < fieldToCheckLC.length; i++) {
                 for (var j = 0; j < letters.length; j++) {
                     if (fieldToCheckLC[i] == letters[j]) {
@@ -604,17 +604,16 @@ window.onload = function () {
 
     function signingUp() {
 
-        message = 'correct:' + newline  +  document.getElementById('fname').value +
-        newline + 'Last Name: ' + document.getElementById('surname').value +
+        message = newline + 'Name: ' + document.getElementById('fname').value +
+        newline + 'Surname: ' + document.getElementById('surname').value +
         newline + 'Dni: ' + document.getElementById('dni').value +
         newline + 'Date of Birth: ' + document.getElementById('birthdate').value +
         newline + 'Phone number: ' + document.getElementById('pnumber').value +
         newline + 'Addres: ' + document.getElementById('address').value +
-        newline + 'City: ' + document.getElementById('location').value +
+        newline + 'Location: ' + document.getElementById('location').value +
         newline + 'Postal Code: ' + document.getElementById('pcode').value +
         newline + 'Email: ' + document.getElementById('email').value +
-        newline + 'Password: ' + document.getElementById('password').value +
-        newline + 'Repeat Password: passwords match';
+        newline + 'Password: ' + document.getElementById('password').value;
         return message;
     }
 
@@ -622,68 +621,68 @@ window.onload = function () {
         function notSigningUp() {
 
         if (!nameConfirmation) {
-           message1 = '-Name: At least 3 letters long.' + newline;
+           message1 = '- Name: At least 3 letters long.' + newline;
         } else {
             message1 = "";
         }
 
         if (!surnameConfirmation) {
-            message2 ='-Surname: At least 3 letters long.' + newline;
+            message2 ='- Surname: At least 3 letters long.' + newline;
         } else {
             message2 = "";
         }
 
         if (!dniConfirmation) {
-            message3 ='-DNI: At least 7 numbers long.' + newline;
+            message3 ='- DNI: At least 7 numbers long.' + newline;
         } else {
             message3 = "";
         }
 
         if (!birthDateConfirmation) {
-            message4 ='-Birth date: Follow the dd/mm/yyyy format' + newline;
+            message4 ='- Birth date: Follow the dd/mm/yyyy format' + newline;
         } else {
             message4= "";
         }
 
         if (!numberConfirmation) {
-            message5 ='-Phone number:  Only 10 numbers long.' + newline;
+            message5 ='- Phone number:  Only 10 numbers long.' + newline;
         } else {
             message5 = "";
         }
 
         if (!addressConfirmation) {
-            message6 ='-Address: At least 5 letters and numbers, with an space in between.' + newline;
+            message6 ='- Address: At least 5 letters and numbers, with an space in between.' + newline;
         } else {
             message6 = "";
         }
 
         if (!locationConfirmation) {
-            message7 ='-Location: At least 3 letters long' + newline;
+            message7 ='- Location: At least 3 letters long' + newline;
         } else {
             message7 = "";
         }
 
         if (!postalCodeConfirmation) 
         {
-            message8 ='-Posta code: At least 4 numbers long, up to 5.' + newline;
+            message8 ='- Posta code: At least 4 numbers long, up to 5.' + newline;
         } else {
             message8 = "";
         }
 
         if (!emailConfirmation) {
-            message9 ='-Email: Follow the Employee@trackhenix.com format' + newline;
+            message9 ='- Email: Follow the Employee@trackhenix.com format' + newline;
         } else {
             message9 = "";
         }
 
         if (!passwordConfirmation) {
-            message10 ='-Password: At least 8 letters and numbers.' + newline;
+            message10 ='- Password: At least 8 letters and numbers.' + newline;
         } else {
             message10 = "";
         }
 
         if (!rPasswordConfirmation) {
-            message11 ='Passwords do not match.' + newline;
+            message11 ='- Passwords do not match.' + newline;
         } else {
             message11 = "";
         }
@@ -692,4 +691,60 @@ window.onload = function () {
 
         return message;
     }
+
+
+    function signUpRequest () {
+
+        var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
+
+        fetch(url + "?name=" + document.getElementById('fname').value +
+            "&lastName=" + document.getElementById('surname').value +
+            "&dni=" + document.getElementById('dni').value +
+            "&dob=" + document.getElementById('birthdate').value +
+            "&phone=" + document.getElementById('pnumber').value +
+            "&address=" + document.getElementById('address').value +
+            "&city=" + document.getElementById('location').value +
+            "&zip=" + document.getElementById('pcode').value +
+            "&email=" + document.getElementById('email').value +
+            "&password=" + document.getElementById('password').value)    
+        .then (function(response){
+            return response.json();
+        })
+        .then (function(jsonResponse){
+            alert (jsonResponse.msg + signingUp());
+            formStorage();
+        })
+        .catch(function(error){
+            console.log('error', error);
+        })
+    }
+
+    function formStorage () {
+
+        localStorage.setItem('fname', document.getElementById('fname').value);
+        localStorage.setItem('surname', document.getElementById('surname').value);
+        localStorage.setItem('dni', document.getElementById('dni').value);
+        localStorage.setItem('birthdate', document.getElementById('birthdate').value);
+        localStorage.setItem('pnumber', document.getElementById('pnumber').value);
+        localStorage.setItem('address', document.getElementById('address').value);
+        localStorage.setItem('location', document.getElementById('location').value);
+        localStorage.setItem('pcode', document.getElementById('pcode').value);
+        localStorage.setItem('email', document.getElementById('email').value);
+        localStorage.setItem('password', document.getElementById('password').value);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

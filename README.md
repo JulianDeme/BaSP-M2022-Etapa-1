@@ -65,7 +65,7 @@ https://juliandeme.github.io/BaSP-M2022-Etapa-1/Semana-07/views/
 Pop-up alerst replaced with Modals made with HTML and CSS.
 
 ### Details
-Week-06´s Sign Up completed thi week.
+Week-06´s Sign Up completed this week.
 
 
 
